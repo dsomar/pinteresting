@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass'
+
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -43,5 +47,16 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'sqlite3'
 end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
+
+
+
+
+
 
